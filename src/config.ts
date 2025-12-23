@@ -28,11 +28,11 @@ const SITE_TIMEZONE = 8; // from -12 to 12 default in UTC+8
 // 站点配置
 export const siteConfig: SiteConfig = {
     // 站点 URL（以斜杠结尾）
-    siteURL: "https://twilight.spr-aachen.com/", // 请替换为你的站点 URL 并以斜杠结尾
+    siteURL: "https://blog.jia-shun.wang/", // 请替换为你的站点 URL 并以斜杠结尾
     // 站点标题
     title: "Twilight",
     // 站点副标题
-    subtitle: "Blog Template",
+    subtitle: "Jiashun Wang's Blog",
     // 语言配置
     lang: SITE_LANG, // 自动检测的浏览器语言
     // 翻译配置
@@ -75,7 +75,7 @@ export const siteConfig: SiteConfig = {
         fixed: false,
     },
     // 默认主题 ("system" 跟随系统 | "light" 浅色 | "dark" 深色)
-    defaultTheme: "dark",
+    defaultTheme: "system",
     // 壁纸配置
     wallpaper: {
         // 模式 ("banner" 横幅 | "fullscreen" 全屏 | "none" 纯色)
@@ -196,7 +196,7 @@ export const navBarConfig: NavBarConfig = {
             children: [
                 {
                     name: "GitHub",
-                    url: "https://github.com/Example",
+                    url: "https://github.com/jiashun-wang",
                     external: true,
                     icon: "fa6-brands:github",
                 },
@@ -366,7 +366,7 @@ export const profileConfig: ProfileConfig = {
         {
             name: "GitHub",
             icon: "fa6-brands:github",
-            url: "https://github.com/Spr-Aachen/Twilight",
+            url: "https://github.com/jiashun-wang/Twilight",
         },
     ],
 };
