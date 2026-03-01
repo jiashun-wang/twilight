@@ -17,42 +17,28 @@ content:
     label: Posts
     folder: src/content/posts
     type: collection
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    #create: true
+    #slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    view: 
+      fields:[title, description, date, category]
     fields:
-      - name: title
-        label: Title
-        type: text
-
-      - name: description
-        label: Description
-        type: markdown
-
-      - name: encrypted
-        label: Encrypted
-        type: boolean
-
-      - name: password
-        label: Password
-        type: text
-        show_if: encrypted
-
-      - name: pinned
-        label: Pinned
-        type: boolean
-
-      - name: date
-        label: Published
-        type: date
-
-      - name: tags
-        label: Tags
-        type: markdown
-
-      - name: category
-        label: Category
-        type: text
-
-      - name: draft
-        label: Draft
-        type: boolean
+    - { name: title, label: Title, type: string, required: true }
+    - { name: description, label: Description, type: string }
+    - { name: encrypted, label: Encrypted, type: boolean }
+    - { name: password, label: Password, type: text, show_if: "encrypted" }
+    - { name: pinned, label: Pinned, type: boolean }
+    - { name: date, label: Published, type: date }
+    - { name: tags, label: Tags, type: string, list: true }
+    - { name: category, label: Category, type: text }
+    - { name: draft, label: Draft, type: boolean }
+    - { name: cover, label: Cover Image, type: string }
+    - { name: coverIncontent, label: Cover in Content, type: boolean }
+    - { name: body, label: Body, type: rich-text }
+    # 新增字段（按你的需求添加）
+    - { name: author, label: Author, type: string }
+    - { name: pubDatetime, label: Date, type: date }
+    - { name: modDatetime, label: Date, type: date }
+    - { name: ogImage, label: OG Image, type: string }
+    - { name: slug, label: Slug, type: string }
+    - { name: featured, label: Featured, type: boolean }
+    - { name: body, label: Body, type: rich-text }
