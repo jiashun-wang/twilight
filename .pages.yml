@@ -35,7 +35,7 @@ content:
       # ===== 内容与分类 =====
       - { name: slug, label: Slug, type: string, required: true }
       - { name: description, label: Description, type: string }
-      - { name: category, label: Category, type: string, list: true  }
+      - { name: category, label: Category, type: select }
       - { name: tags, label: Tags, type: string, list: true }
     
       # ===== 发布控制 =====
@@ -43,8 +43,8 @@ content:
       - { name: pinned, label: Pinned, type: boolean }
     
       # ===== 多语言与SEO =====
-      - { name: language, label: Language, type: string }  # 建议默认值: "en"
-      - { name: toc, label: Show TOC, type: boolean }     # 更清晰的标签
+      - { name: language, label: Language, type: string } 
+      - { name: toc, label: Show TOC, type: boolean }    
     
       # ===== 媒体与交互 =====
       - { name: cover, label: Cover Image, type: string }
