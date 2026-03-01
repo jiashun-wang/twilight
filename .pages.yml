@@ -3,13 +3,13 @@ media:
     label: Images
     input: public/assets/images
     output: /assets/images
-    category: [ image ] 
+    categories: [image]
 
   - name: music
     label: Music
     input: public/assets/music
     output: /assets/music
-    category: [ audio ] 
+    categories: [ audio ] 
 
 
 content:
