@@ -19,8 +19,8 @@ content:
     type: collection
     #create: true
     #slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    # view: 
-    #   fields:[title, description, date, category]
+    view: 
+      fields:[title, description, published, category]
     fields:
     - { name: title, label: Title, type: string, required: true }
     - { name: description, label: Description, type: string }
