@@ -33,7 +33,7 @@ content:
     - { name: cover, label: Cover Image, type: string }
     - { name: coverIncontent, label: Cover in Content, type: boolean }
     - { name: encrypted, label: Encrypted, type: boolean }
-    - { name: password, label: Password, type: text, show_if: "encrypted" }
+    - { name: password, label: Password, type: text}
 
 
  
