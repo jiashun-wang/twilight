@@ -15,7 +15,7 @@ media:
 content:
   - name: posts
     label: Posts
-    folder: src/content/posts
+    path: src/content/posts
     type: collection
     #create: true
     #slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
