@@ -20,7 +20,7 @@ content:
     #create: true
     #slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     view: 
-      fields: [title, draft, date']
+      fields: [pinned, draft, title, author, category, tags, published, date ]
 
     fields:
     - { name: title, label: Title, type: string, required: true }
@@ -36,6 +36,7 @@ content:
     - { name: coverIncontent, label: Cover in Content, type: boolean }
     - { name: encrypted, label: Encrypted, type: boolean }
     - { name: password, label: Password, type: text}
+    - { name: body, label: Body, type: rich-text}
 
 
  
