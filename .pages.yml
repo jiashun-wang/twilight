@@ -1,0 +1,58 @@
+media:
+  - name: images
+    label: Images
+    input: public/assets/images
+    output: /assets/images
+    category: [ image ] 
+
+  - name: music
+    label: Music
+    input: public/assets/music
+    output: /assets/music
+    category: [ audio ] 
+
+
+content:
+  - name: posts
+    label: Posts
+    folder: src/content/posts
+    type: collection
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - name: title
+        label: Title
+        type: text
+
+      - name: description
+        label: Description
+        type: markdown
+
+      - name: encrypted
+        label: Encrypted
+        type: boolean
+
+      - name: password
+        label: Password
+        type: text
+        show_if: encrypted
+
+      - name: pinned
+        label: Pinned
+        type: boolean
+
+      - name: date
+        label: Published
+        type: date
+
+      - name: tags
+        label: Tags
+        type: markdown
+
+      - name: category
+        label: Category
+        type: text
+
+      - name: draft
+        label: Draft
+        type: boolean
