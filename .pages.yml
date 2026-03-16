@@ -35,7 +35,7 @@ content:
       # ===== 内容与分类 =====
       - { name: slug, label: Slug, type: string, required: true }
       - { name: description, label: Description, type: string }
-      - { name: category, label: Category, type: string, list: true  }
+      - { name: category, label: Category, type: string  }
       - { name: tags, label: Tags, type: string, list: true }
     
       # ===== 发布控制 =====
